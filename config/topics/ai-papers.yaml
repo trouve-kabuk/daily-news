@@ -1,0 +1,37 @@
+id: ai-papers
+version: 1
+name: State-of-the-art AI papers
+description: Significant recent research papers that advance the state of the art in artificial intelligence.
+facets:
+  - Foundation models and reasoning
+  - Agents, tool use, and code generation
+  - Multimodal learning and efficient training or inference
+positive_examples:
+  - A paper reporting a well-supported state-of-the-art result
+  - A novel method with strong evaluations and reproducible evidence
+hard_negative_examples:
+  - A tutorial or opinion article without original research
+exclusions:
+  - Papers whose main contribution is outside artificial intelligence
+entities: [arXiv, OpenReview]
+terms: [state of the art, foundation model, reasoning, agent, multimodal]
+sources: [arxiv-cs-ai]
+freshness_hours: 168
+edition:
+  max_articles: 12
+coverage:
+  - id: global-english
+    markets: [global]
+    languages: [en]
+    target_articles: 8
+    max_articles: 10
+  - id: japan
+    markets: [JP]
+    languages: [ja, en]
+    target_articles: 2
+    max_articles: 3
+  - id: china
+    markets: [CN]
+    languages: [zh-Hans, en]
+    target_articles: 2
+    max_articles: 3

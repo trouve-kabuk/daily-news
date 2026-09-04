@@ -1,0 +1,88 @@
+sources:
+  - id: openai-news
+    name: OpenAI News
+    kind: rss
+    url: https://openai.com/news/rss.xml
+    languages: [en]
+    markets: [global]
+    rate_limit_seconds: 1
+    attribution: OpenAI
+  - id: github-blog
+    name: GitHub Blog
+    kind: rss
+    url: https://github.blog/feed/
+    languages: [en]
+    markets: [global]
+    rate_limit_seconds: 1
+    attribution: GitHub
+  - id: publickey
+    name: Publickey
+    kind: rss
+    url: https://www.publickey1.jp/atom.xml
+    languages: [ja]
+    markets: [JP]
+    rate_limit_seconds: 1
+    attribution: Publickey
+  - id: arxiv-cs-ai
+    name: arXiv cs.AI
+    kind: arxiv_api
+    url: https://export.arxiv.org/api/query?search_query=cat:cs.AI&sortBy=submittedDate&sortOrder=descending&max_results=100
+    languages: [en]
+    markets: [global]
+    rate_limit_seconds: 3
+    retry:
+      attempts: 4
+      backoff_seconds: 5
+    attribution: arXiv
+  - id: anthropic-news
+    name: Anthropic News
+    kind: html
+    url: https://www.anthropic.com/news
+    languages: [en]
+    markets: [global]
+    enabled: false
+    rate_limit_seconds: 1
+    attribution: Anthropic
+  - id: google-blog
+    name: Google Blog
+    kind: html
+    url: https://blog.google.com
+    languages: [en]
+    markets: [global]
+    enabled: false
+    rate_limit_seconds: 1
+    attribution: Google
+  - id: microsoft-dev-blog
+    name: Microsoft Dev Blog
+    kind: html
+    url: https://devblogs.microsoft.com
+    languages: [en]
+    markets: [global]
+    enabled: false
+    rate_limit_seconds: 1
+    attribution: Microsoft
+  - id: hacker-news
+    name: Hacker News Top Stories
+    kind: hackernews_api
+    url: https://hacker-news.firebaseio.com/v0/topstories.json
+    languages: [en]
+    markets: [global]
+    topic_specific: false
+    max_items: 75
+    rate_limit_seconds: 0
+    attribution: Hacker News / Y Combinator
+  - id: bluesky-ai-engineering
+    name: Bluesky AI Engineering Search
+    kind: bluesky_search
+    url: https://api.bsky.app/xrpc/app.bsky.feed.searchPosts
+    languages: [en]
+    markets: [global]
+    topic_specific: false
+    max_items: 100
+    rate_limit_seconds: 1
+    attribution: Bluesky
+    retain_content: true
+    bluesky:
+      query: coding agent
+      sort: latest
+      language: en

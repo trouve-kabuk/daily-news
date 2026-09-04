@@ -1,0 +1,16 @@
+# Languages that can be read without translation, in preference order.
+# Content in other languages is translated into the first language below.
+preferred_languages: [en]
+
+# Omit `model` (or set it to null) to disable local translation and summaries.
+llm:
+  provider: llama_cpp
+  model:
+    repository: unsloth/Qwen3.8-27B-GGUF
+    filename: Qwen3.8-27B-UD-Q4_K_M.gguf
+    revision: 4ca720788d1e01f1bff70c033e0d0028fd02e502
+  # provider: llama_cpp
+  # model:
+  #   repository: publisher/model-GGUF
+  #   filename: model-Q4_K_M.gguf
+  #   revision: 40-character-commit-hash

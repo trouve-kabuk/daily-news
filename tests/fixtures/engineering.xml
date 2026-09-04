@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Engineering News</title>
+    <item>
+      <guid>engineering-1</guid>
+      <title>New &amp;amp; useful AI coding agent</title>
+      <link>https://example.com/agent/?utm_source=newsletter</link>
+      <description><![CDATA[<p>A substantial tool for developers.</p>]]></description>
+      <author>Ada Example</author>
+      <pubDate>Thu, 03 Sep 2026 01:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <guid>engineering-old</guid>
+      <title>Old developer tool</title>
+      <link>https://example.com/old</link>
+      <pubDate>Thu, 20 Aug 2026 01:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

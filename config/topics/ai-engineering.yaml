@@ -1,0 +1,37 @@
+id: ai-engineering
+version: 3
+name: AI services for engineering
+description: New AI services, developer tools, coding agents, and infrastructure that materially affect software engineering.
+facets:
+  - AI coding agents and assistants
+  - Developer tooling and model APIs
+  - Evaluation, observability, security, and deployment for AI software
+positive_examples:
+  - A substantial release of an AI coding agent
+  - A new model API capability useful to software teams
+hard_negative_examples:
+  - Consumer AI news with no software-engineering application
+exclusions:
+  - Generic company announcements without a usable product or technical change
+entities: [OpenAI, GitHub, Anthropic, Google, Microsoft]
+terms: [AI, LLM, coding agent, developer tools, model API, AI engineering]
+sources: [openai-news, github-blog, publickey, anthropic-news, microsoft-dev-blog, google-blog, hacker-news, bluesky-ai-engineering]
+freshness_hours: 96
+edition:
+  max_articles: 12
+coverage:
+  - id: global-english
+    markets: [global]
+    languages: [en]
+    target_articles: 6
+    max_articles: 8
+  - id: japan
+    markets: [JP]
+    languages: [ja, en]
+    target_articles: 3
+    max_articles: 4
+  - id: china
+    markets: [CN]
+    languages: [zh-Hans, en]
+    target_articles: 3
+    max_articles: 4
